@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/android-chrome-512x512.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="nav-left">
+          <h2>Progress Dashboard</h2>
+          <p>Track your productivity and plan your day</p>
+        </div>
+        <div class="nav-right">
+          <div class="location">
+            <img src="./assets/map-pin-2-line.png" alt="" />
+            <input type="text" placeholder="Enter City Name" />
+          </div>
+          <button class="theme-btn">Change Theme</button>
+        </div>
+      </nav>
+      <div class="weather-section">
+        <div class="black"></div>
+        <div class="weather-container">
+          <div class="weather-right">
+            <h1>10 June , 2025</h1>
+            <h2>Sunday , 20:05:06</h2>
+            <h2 class="city-name">Delhi (New Delhi) , India</h2>
+          </div>
+          <div class="weather-left">
+            <div class="temperature">
+              <h1>36°C</h1>
+              <h5>Mist</h5>
+            </div>
+            <div class="weather-description">
+              <p class="feels"></p>
+              <p class="humidity"></p>
+              <p class="wind"></p>
+            </div>
+          </div>
+        </div>
+        <video
+          src="./assets/vid1.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="auto"
+          controlslist="nodownload"
+          oncontextmenu="return false;"
+          class="background-video"
+        ></video>
+      </div>
+      <div class="cards-section">
+        <h1>Make Your Day Productive</h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="black"></div>
+            <div class="card-lower">
+              <i class="fa-solid fa-list-ol"></i>
+              <h2>Todo List</h2>
+            </div>
+            <video
+              src="./assets/todo.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+            ></video>
+          </div>
+          <div class="card">
+            <div class="card-lower">
+              <i class="fa-solid fa-trophy"></i>
+              <h2>Motivation</h2>
+            </div>
+            <div class="black"></div>
+            <video
+              src="./assets/motivation.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+            ></video>
+          </div>
+          <div class="card">
+            <div class="card-lower">
+              <i class="fa-regular fa-clock"></i>
+              <h2>Timer</h2>
+            </div>
+            <div class="black"></div>
+            <video
+              src="./assets/timer.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+            ></video>
+          </div>
+          <div class="card">
+            <div class="card-lower">
+              <i class="fa-solid fa-book"></i>
+              <h2>Daily Planner</h2>
+            </div>
+            <div class="black"></div>
+            <video
+              src="./assets/dailyplanner.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+            ></video>
+          </div>
+          <div class="card">
+            <div class="card-lower">
+              <i class="fa-regular fa-note-sticky"></i>
+              <h2>Sticky Notes</h2>
+            </div>
+            <div class="black"></div>
+            <video
+              src="./assets/sticky.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+            ></video>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <h4>
+          Created With <span><i class="fa-regular fa-heart"></i></span> By
+          Arshad Zeya
+        </h4>
+      </div>
+    </main>
+    <div class="all-sections">
+      <section class="todo-list">
+        <div class="section-upper">
+          <h1>Make a Todo List!</h1>
+          <button>Back</button>
+        </div>
+        <div class="todo-container">
+          <div class="todo-edit-popup">
+            <div class="cut-round">
+              <i class="fa-solid fa-xmark cut-icon"></i>
+            </div>
+            <h1>Edit Your Task</h1>
+            <input type="text" />
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button>Update Task</button>
+          </div>
+          <div class="todo-left">
+            <h1>Make Your Task</h1>
+            <p class="todo-error"></p>
+            <input type="text" placeholder="Enter your Task" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="7"
+              placeholder="Enter your task description"
+            ></textarea>
+            <div class="check">
+              <input type="checkbox" name="" id="checkbox" />
+              <label for="checkbox">Mark as Important</label>
+            </div>
+            <button>Create Task</button>
+          </div>
+          <div class="todo-right"></div>
+        </div>
+      </section>
+      <section class="motivation">
+        <div class="section-upper">
+          <h1>Be Motivated!</h1>
+          <button>Back</button>
+        </div>
+        <div class="motivation-container">
+          <div class="motivation-content">
+            <h2>Quotes</h2>
+            <h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos dicta, facilis veniam quibusdam repudiandae reiciendis
+              ipsam voluptatibus vero at nam.
+            </h5>
+            <p>-sarthak sharma</p>
+          </div>
+        </div>
+      </section>
+      <section class="Timer">
+        <div class="section-upper">
+          <h1>Study with me!</h1>
+          <button>Back</button>
+        </div>
+        <div class="timer-container">
+          <div class="timer-input">
+            <p class="timer-err"></p>
+            <input type="text" placeholder="Enter Time in minutes" />
+            <button>Ok</button>
+          </div>
+          <div class="timer-content">
+            <h2>Timer</h2>
+            <h5>Let's Start</h5>
+            <div class="progress-bar">
+              <div class="bar"></div>
+            </div>
+            <h1>00:00</h1>
+            <div class="timer-buttons">
+              <audio
+                src="./assets/tick-tick.mp3"
+                loop
+                class="tick-tick"
+              ></audio>
+              <audio src="./assets/audio sound.mp3" class="timesup"></audio>
+              <audio src=""></audio>
+              <button class="start">Start</button>
+              <button class="pause">Pause</button>
+              <button class="reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="daily-planner">
+        <div class="section-upper">
+          <h1>Plan Your Day!</h1>
+          <button>Back</button>
+        </div>
+        <div class="daily-planner-container"></div>
+      </section>
+      <section class="sticky-notes">
+        <div class="section-upper">
+          <h1>Your Notes!</h1>
+          <button>Back</button>
+        </div>
+        <button class="create-notes">Create Notes</button>
+        <div class="create-notes-popup">
+          <div class="cut-round">
+            <i class="fa-solid fa-xmark cut-icon"></i>
+          </div>
+          <h1>Write Your Notes Content</h1>
+          <p class="sticky-error"></p>
+          <textarea name="" id="" cols="30" rows="7"></textarea>
+          <div class="select-color">
+            <h3>Select Your Notes color</h3>
+            <p class="color-error"></p>
+            <div class="colors">
+              <button value="#f1f58f"></button>
+              <button value="#ffa930"></button>
+              <button value="#ff32b2"></button>
+              <button value="#a9edf1"></button>
+              <button value="#74ed4b"></button>
+            </div>
+          </div>
+          <button class="paste-task-btn">Paste your Note</button>
+        </div>
+        <div class="sticky-notes-container"></div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
