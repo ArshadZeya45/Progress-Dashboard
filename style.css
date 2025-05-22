@@ -1047,6 +1047,7 @@ textarea {
   }
   .todo-container .todo-left {
     width: 100%;
+    padding: 1rem;
   }
 
   .todo-container .todo-right {
@@ -1068,7 +1069,7 @@ textarea {
 
   .motivation-container {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 5rem;
     padding: 1.4rem;
   }
 
@@ -1226,7 +1227,7 @@ textarea {
   }
 
   .footer span i {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .sticky-notes-container::-webkit-scrollbar {
   display: none;
