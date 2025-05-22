@@ -1228,4 +1228,13 @@ textarea {
   .footer span i {
     font-size: 1rem;
   }
+  .sticky-notes-container::-webkit-scrollbar {
+  display: none;
+ }
+.daily-planner-container::-webkit-scrollbar {
+  display: none;
+ }
+ .todo-container .todo-right::-webkit-scrollbar {
+  display: none;
+}
 }
