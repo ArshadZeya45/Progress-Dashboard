@@ -674,3 +674,22 @@ function themeChange() {
 }
 
 themeChange();
+
+gsap.to("nav", {
+  duration: 1.2,
+  opacity : 1,
+  y: 0,
+  ease: "power4.out",
+  delay : 0.5
+});
+
+let weatherSection = document.querySelector(".weather-section")
+
+gsap.to(".weather-section",{
+  duration:1.2,
+  opacity : 1,
+  y:0,
+  ease: "power4.out",
+  delay: 1.5
+
+})
