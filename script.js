@@ -197,15 +197,17 @@ function motivationFunc() {
   let motivationContentAuthor = document.querySelector(".motivation-content p");
 
   async function fetchQuotes() {
-    try{
-      let response = await fetch("https://api.quotable.io/random?tags=motivational");
+  try {
+    let response = await fetch("https://quoteslate.vercel.app/api/quotes/random");
     let data = await response.json();
-    motivationContent.innerHTML = data.content;
+    motivationContent.innerHTML = data.quote;
     motivationContentAuthor.innerHTML = `-${data.author}`;
-    } catch(err){
-      console.log(err)
-    }
+  } catch (err) {
+    motivationContent.innerHTML = "Stay positive and keep going!";
+    motivationContentAuthor.innerHTML = "- Unknown";
+    console.error("Quote fetch failed:", err);
   }
+}
   fetchQuotes();
 }
 
