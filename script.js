@@ -197,10 +197,14 @@ function motivationFunc() {
   let motivationContentAuthor = document.querySelector(".motivation-content p");
 
   async function fetchQuotes() {
-    let response = await fetch("https://api.quotable.io/random?tags=motivational");
+    try{
+      let response = await fetch("https://api.quotable.io/random?tags=motivational");
     let data = await response.json();
     motivationContent.innerHTML = data.content;
     motivationContentAuthor.innerHTML = `-${data.author}`;
+    } catch(err){
+      console.log(err)
+    }
   }
   fetchQuotes();
 }
